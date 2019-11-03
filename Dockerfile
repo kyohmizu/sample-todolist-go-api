@@ -12,7 +12,7 @@ CMD ["./go-api"]
 
 # --- #
 
-FROM alpine:3.10
+FROM golang:latest
 
 COPY --from=builder /app/go-api /usr/local/bin/
 
